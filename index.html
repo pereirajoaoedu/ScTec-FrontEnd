@@ -42,10 +42,32 @@
             <p>© 2024 João Eduardo. Todos os direitos reservados.</p>
             <section id="contato">
                 <h3>Contato</h3>
-                <address>
-                    Email: <a href="mailto:pereira.joaoedu@gmail.com">pereira.joaoedu@gmail.com</a><br>
-                    Telefone: <a href="tel:(48) 996179301">(48) 996179301</a>
-                </address>
+                <p>Tem um projeto em mente? Entre em contato.</p>
+
+                <form action="">
+                    <label for="lblNome">Nome:</label>
+                    <input type="text" id="txtNome" name="txtNome" required><br>
+
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" name="txtEmail" required><br>
+
+                    <label for="txtTelefone">Telefone:</label>
+                    <input type="tel" id="txtTelefone" name="txtTelefone" required><br>
+
+                    <label for="slcAssunto">Assunto:</label>
+                    <select id="slcAssunto" name="slcAssunto" required>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="projeto">Dúvida</option>
+                        <option value="outros">Outros</option>
+                    </select> <br>
+                    <label for="txtMensagem">Mensagem:</label><br>
+                    <textarea id="txtMensagem" name="txtMensagem" cols="30" rows="10" required></textarea><br>
+
+                    <input type="checkbox" id="chkInscricao" name="inscricao" required>
+                    <label for="chkInscricao">Desejo receber novidades e atualizações por email.</label><br>
+
+                    <button type="submit" id="btEnviarMensagem">Enviar</button>
+                </form>
             </section>
         </footer>
     </body>
